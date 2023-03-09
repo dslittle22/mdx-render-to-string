@@ -10,9 +10,6 @@ export async function generateStaticParams() {
   await generateRssFeed();
 
   return [{ slug: "route" }];
-  // return posts.map(({ frontmatter }) => ({
-  //   slug: frontmatter.slug,
-  // }));
 }
 
 async function generateRssFeed() {
